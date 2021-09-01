@@ -34,7 +34,7 @@
           </ul>
         </nav>
         <ul class="contacts-list contacts-list--vertical">
-          <li class="contacts-list__item">
+          <li class="contacts-list__item contacts-list__item--horizontal">
             <a
               href="mailto:info@devstudio.com"
               class="contacts-list__link contacts-list__link--horizontal"
@@ -45,7 +45,7 @@
               info@devstudio.com</a
             >
           </li>
-          <li class="contacts-list__item">
+          <li class="contacts-list__item contacts-list__item--horizontal">
             <a href="tel:+380961111111" class="contacts-list__link contacts-list__link--horizontal">
               <svg class="contacts-list__icon">
                 <use href="./images/sprite.svg#smartphone"></use>
@@ -383,16 +383,18 @@
         <div class="footer__info">
           <a href="#" class="logo footer__logo"><span class="logo--highlight">Web</span>Studio</a>
           <ul class="contacts-list footer__contacts-list">
-            <li class="contacts-list__item">
+            <li class="contacts-list__item contacts-list__item--vertical">
               <address class="contacts-list__address">г. Киев, пр-т Леси Украинки, 26</address>
             </li>
-            <li class="contacts-list__item">
-              <a href="mailto:info@devstudio.com" class="contacts-list__link--footer"
+            <li class="contacts-list__item contacts-list__item--vertical">
+              <a
+                href="mailto:info@devstudio.com"
+                class="contacts-list__link contacts-list__link--vertical"
                 >info@devstudio.com</a
               >
             </li>
-            <li class="contacts-list__item">
-              <a href="tel:+380961111111" class="contacts-list__link contacts-list__link--footer"
+            <li class="contacts-list__item contacts-list__item--vertical">
+              <a href="tel:+380961111111" class="contacts-list__link contacts-list__link--vertical"
                 >+38 096 111 11 11</a
               >
             </li>
@@ -444,7 +446,6 @@
             <label class="sub-form__label" for="mail">E-mail</label>
           </div>
           <button class="button button--primary footer__button--primary" type="submit">
-            <!-- CHECK APPEARANCE: WHICH CLASS WILL BE USED FOR BTN COLORS / WHICH FOR GEOMETRY - MODIFY SPECIFIC CLASS -->
             <span class="button__text">Подписаться</span>
             <span class="button__sub-icon">
               <svg width="24" height="24">

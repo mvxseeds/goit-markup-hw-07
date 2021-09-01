@@ -141,7 +141,7 @@ a {
 }
 
 .main-nav__item:not(:last-child),
-.contacts-list__item:not(:last-child) {
+.contacts-list__item--horizontal:not(:last-child) {
   margin-right: 50px;
 }
 
@@ -312,6 +312,8 @@ a {
   line-height: 1.14;
 
   text-transform: uppercase;
+
+  color: var(--secondary-text-color);
 }
 
 .advantages__text {
@@ -327,7 +329,8 @@ a {
   padding-top: 0;
 }
 
-.member-cards {
+.member-cards,
+.card-set {
   display: flex;
 }
 
@@ -339,6 +342,8 @@ a {
 .card-set__item:last-child {
   margin-right: 0;
 }
+
+/* INDEX BUT ALSO IN PORTF */
 
 .product-type {
   position: relative;
@@ -366,6 +371,10 @@ a {
   color: var(--lighter);
 }
 
+.product-type__img {
+  display: block;
+}
+
 .our-team__section {
   display: flex;
 }
@@ -389,6 +398,8 @@ a {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
+
+  color: var(--secondary-text-color);
 }
 
 .member-card__text {
@@ -572,6 +583,8 @@ a {
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
+
+  color: var(--secondary-text-color);
 }
 
 .product__text {
@@ -589,14 +602,14 @@ a {
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
-.product:hover .product__text,
-.product:focus .product__text {
+.product:hover .product__popup-text,
+.product:focus .product__popup-text {
   bottom: 0;
 }
 
 /* Background decoration (Studio Page hero) +footer */
 
-.hero,
+.hero__section,
 .footer {
   background-color: var(--bg-dark);
 }
@@ -626,27 +639,33 @@ a {
   margin-bottom: 20px;
 }
 
+.contacts-list__item--vertical {
+  margin-right: 0;
+  margin-bottom: 9px;
+}
+
+.contacts-list__item--vertical:last-child {
+  margin-bottom: 0;
+}
+
 .contacts-list__address {
   color: var(--lighter);
-
-  margin-bottom: 9px;
 
   font-size: 14px;
   line-height: 1.7;
 }
 
-.contacts-list__link--footer {
+.contacts-list__link--vertical {
   color: var(--footer-lighter-60);
 
   display: block;
-  margin-bottom: 9px;
 
   font-weight: 400;
   font-size: 14px;
   line-height: 1.7;
 }
 
-.contacts-list__link--footer:last-child {
+.contacts-list__link--last {
   margin-bottom: 0;
 }
 
