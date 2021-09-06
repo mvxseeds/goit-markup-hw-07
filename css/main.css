@@ -260,4 +260,351 @@ Add the correct display in Chrome and Safari.
 summary {
   display: list-item;
 }
+
+.visually-hidden {
+  visibility: none;
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+
+body {
+  background-color: var(--lighter);
+  color: var(--primary-text-color);
+  font-family: 'Roboto', sans-serif;
+  letter-spacing: 0.03em;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+address {
+  font-style: normal;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.header__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.no-hero__header {
+  border-bottom: 1px solid #ececec;
+}
+
+.main-nav__link {
+  color: #212121;
+}
+
+.main-nav__link--current,
+.main-nav__link:hover,
+.main-nav__link:focus,
+.contacts-list__link:hover,
+.contacts-list__link:focus,
+.contacts-list__link:hover .contacts-list__icon,
+.contacts-list__link:focus .contacts-list__icon {
+  color: #2196f3;
+  fill: #2196f3;
+}
+
+.main-nav__link--current {
+  position: relative;
+}
+
+.main-nav__link--current::after {
+  position: absolute;
+  content: '';
+  bottom: 0;
+  left: 0;
+  height: 4px;
+  width: 100%;
+  border-radius: 2px;
+  background-color: #2196f3;
+}
+
+.contacts-list__link {
+  color: inherit;
+}
+
+.header__nav,
+.main-nav,
+.contacts-list--vertical {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contacts-list {
+  margin-left: auto;
+}
+
+.main-nav__item:not(:last-child),
+.contacts-list__item--horizontal:not(:last-child) {
+  margin-right: 50px;
+}
+
+.main-nav__link,
+.contacts-list__link--horizontal {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+
+.contacts-list__icon {
+  fill: #757575;
+  width: 16px;
+  height: 16px;
+  margin-right: 10px;
+}
+
+.logo {
+  display: block;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+  color: #212121;
+}
+
+.logo--highlight {
+  color: #2196f3;
+}
+
+.header__logo {
+  margin-right: 93px;
+}
+
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.section__title {
+  margin: 0 auto 50px;
+  color: #212121;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.2;
+  text-align: center;
+}
+
+.button {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+  display: inline-block;
+  cursor: pointer;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  font-family: inherit;
+}
+
+.button--primary,
+.products__button:hover,
+.products__button:focus {
+  color: #ffffff;
+  background-color: #2196f3;
+  -webkit-box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+          box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+
+.button--secondary {
+  color: #212121;
+  background-color: #f5f4fa;
+}
+
+.footer {
+  padding: 60px 15px 60px 15px;
+}
+
+.footer_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+}
+
+.footer__info {
+  margin-right: 70px;
+}
+
+.footer__logo {
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
+.contacts-list__item--vertical {
+  margin-right: 0;
+  margin-bottom: 9px;
+}
+
+.contacts-list__item--vertical:last-child {
+  margin-bottom: 0;
+}
+
+.contacts-list__address {
+  color: #ffffff;
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+.contacts-list__link--vertical {
+  color: rgba(255, 255, 255, 0.6);
+  display: block;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+.contacts-list__link--last {
+  margin-bottom: 0;
+}
+
+.footer__join-us {
+  margin-right: 93px;
+}
+
+.footer__text,
+.sub-form__text {
+  display: block;
+  margin-bottom: 20px;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.social-link--dark {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.social-link__icon--dark {
+  background-color: transparent;
+  fill: #ffffff;
+}
+
+.join-us .social-links .link:hover,
+.join-us .social-links .link:focus {
+  background-color: #2196f3;
+}
+
+.sub-form {
+  min-width: 570px;
+}
+
+.sub-form__field {
+  display: inline-block;
+}
+
+.sub-form__input {
+  min-height: 50px;
+  margin-right: 12px;
+  padding: 15px 15px;
+  outline: none;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+          filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  background: transparent;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.sub-form__input::-webkit-input-placeholder {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.sub-form__input:-ms-input-placeholder {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.sub-form__input::-ms-input-placeholder {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.sub-form__input::placeholder {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.sub-form__label {
+  visibility: none;
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+
+.footer__button--primary {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px 30px;
+}
+
+.button__text {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin-bottom: 0;
+  margin-right: 10px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  text-transform: none;
+}
+
+.button__sub-icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  fill: #ffffff;
+}
 /*# sourceMappingURL=main.css.map */
