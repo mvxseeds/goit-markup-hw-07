@@ -1,8 +1,9 @@
 .footer {
   padding: 60px 15px 60px 15px;
+  background-color: $bg-dark;
 }
 
-.footer_container {
+.footer__container {
   display: flex;
   align-items: baseline;
 }

@@ -1,0 +1,31 @@
+.clients-list__item {
+  margin-right: 30px;
+  width: 170px;
+  height: 92px;
+}
+
+.client {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: inherit;
+  height: inherit;
+  border: 1px solid $icon-fill;
+  border-radius: 4px;
+
+  transition: 250ms;
+  transition-property: border-color;
+  transition-timing-function: cubic-bezier(0.1, 0.7, 1, 0.1);
+}
+
+.client__icon {
+  fill: $icon-fill;
+}
+
+.client:hover,
+.client:focus,
+.client:hover .client__icon,
+.client:focus .client__icon {
+  border-color: $accent;
+  fill: $accent;
+}
