@@ -1,0 +1,36 @@
+.social-list {
+  @extend %list;
+  @extend %flex-center;
+}
+
+.social-list__item {
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.social-list__item:last-child,
+.clients-list__item:last-child {
+  margin-right: 0;
+}
+
+.social-link {
+  display: block;
+  border-radius: 50%;
+  padding: 12px;
+  width: 44px;
+  height: 44px;
+}
+
+.social-link__icon {
+  fill: $icon-fill;
+}
+
+.social-link:hover,
+.social-link:focus {
+  background-color: $accent;
+}
+
+.social-link:hover .social-link__icon,
+.social-link:focus .social-link__icon {
+  fill: $lighter;
+}

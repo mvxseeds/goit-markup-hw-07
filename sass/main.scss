@@ -1,7 +1,7 @@
 @import './utils/variables';
+@import './utils/placeholders';
 @import './base/normalize';
 @import './base/visually_hidden';
-@import './base/html_noeffects';
 @import './components/container';
 @import './components/header';
 @import './components/logo';
@@ -10,7 +10,9 @@
 @import './components/hero';
 @import './components/advantages';
 @import './components/our_business';
-@import './components/out_team';
+@import './components/our_team';
+@import './components/social_box';
 @import './components/clients';
 @import './components/footer';
 @import './components/modal';
+@import './components/animations';

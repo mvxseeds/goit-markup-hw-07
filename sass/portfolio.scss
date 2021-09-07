@@ -1,14 +1,14 @@
 @import './utils/variables';
 @import './base/normalize';
 @import './base/visually_hidden';
-@import './base/html_noeffects';
 @import './components/container';
 @import './components/header';
 @import './components/logo';
 @import './components/sections';
 @import './components/buttons';
 @import './components/gallery';
+@import './components/social_box';
 @import './components/footer';
-
-// DELETE, BC SHOULDN'T USE ONCE STRUCT
-@import './components/out_team';
+@import './components/animations';
+// flex centers was there - check
+@import './components/our_team';

@@ -1,3 +1,7 @@
+.clients-list {
+  @extend %list, %flex-center;
+}
+
 .clients-list__item {
   margin-right: 30px;
   width: 170px;
@@ -5,9 +9,7 @@
 }
 
 .client {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @extend %flex-center;
   width: inherit;
   height: inherit;
   border: 1px solid $icon-fill;
@@ -16,16 +18,18 @@
   transition: 250ms;
   transition-property: border-color;
   transition-timing-function: cubic-bezier(0.1, 0.7, 1, 0.1);
+
+  &__icon {
+    fill: $icon-fill;
+  }
+
+  &:hover,
+  &:focus {
+    border-color: $accent;
+  }
 }
 
-.client__icon {
-  fill: $icon-fill;
-}
-
-.client:hover,
-.client:focus,
 .client:hover .client__icon,
 .client:focus .client__icon {
-  border-color: $accent;
   fill: $accent;
 }

@@ -9,12 +9,13 @@
 }
 
 .products-view {
-  display: flex;
-  justify-content: center;
+  @extend %list;
+  @extend %flex-center;
   margin-bottom: 50px;
 }
 
 .card-set--products {
+  @extend %list;
   display: flex;
   flex-wrap: wrap;
 }

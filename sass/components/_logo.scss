@@ -1,4 +1,5 @@
 .logo {
+  @extend %link;
   display: block;
 
   font-family: $Raleway;
@@ -11,8 +12,4 @@
   &--highlight {
     color: $accent;
   }
-}
-
-.header__logo {
-  margin-right: 93px;
 }
