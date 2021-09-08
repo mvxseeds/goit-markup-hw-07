@@ -1,16 +1,14 @@
 .social-list {
-  @extend %list;
-  @extend %flex-center;
-}
+  @extend %list, %flex-center;
 
-.social-list__item {
-  border-radius: 50%;
-  margin-right: 10px;
-}
+  &__item {
+    border-radius: 50%;
+    margin-right: 10px;
+  }
 
-.social-list__item:last-child,
-.clients-list__item:last-child {
-  margin-right: 0;
+  &__item:last-child {
+    margin-right: 0;
+  }
 }
 
 .social-link {
@@ -23,6 +21,15 @@
 
 .social-link__icon {
   fill: $icon-fill;
+}
+
+.social-link--dark {
+  background-color: $footer-social;
+}
+
+.social-link__icon--dark {
+  background-color: transparent;
+  fill: $lighter;
 }
 
 .social-link:hover,

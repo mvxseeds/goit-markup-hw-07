@@ -2,18 +2,18 @@
   padding-top: 0;
 }
 
-.member-cards,
 .card-set {
+  @extend %list;
   display: flex;
-}
 
-.card-set__item {
-  width: calc((100% - 2 * 30px) / 3);
-  margin-right: 30px;
-}
+  &__item {
+    width: calc((100% - 2 * 30px) / 3);
+    margin-right: 30px;
+  }
 
-.card-set__item:last-child {
-  margin-right: 0;
+  &__item:last-child {
+    margin-right: 0;
+  }
 }
 
 /* INDEX BUT ALSO IN PORTF */

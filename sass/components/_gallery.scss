@@ -35,6 +35,7 @@
 }
 
 .product {
+  @extend %link;
   display: block;
   color: inherit;
 }

@@ -1,11 +1,15 @@
 .clients-list {
   @extend %list, %flex-center;
-}
 
-.clients-list__item {
-  margin-right: 30px;
-  width: 170px;
-  height: 92px;
+  &__item {
+    margin-right: 30px;
+    width: 170px;
+    height: 92px;
+  }
+
+  &__item:last-child {
+    margin-right: 0;
+  }
 }
 
 .client {
