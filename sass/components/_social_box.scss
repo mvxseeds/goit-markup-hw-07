@@ -17,27 +17,26 @@
   padding: 12px;
   width: 44px;
   height: 44px;
-}
 
-.social-link__icon {
-  fill: $icon-fill;
-}
+  &__icon {
+    fill: $icon-fill;
 
-.social-link--dark {
-  background-color: $footer-social;
-}
+    &--dark {
+      background-color: transparent;
+      fill: $lighter;
+    }
+  }
 
-.social-link__icon--dark {
-  background-color: transparent;
-  fill: $lighter;
-}
+  &--dark {
+    background-color: $footer-social;
+  }
 
-.social-link:hover,
-.social-link:focus {
-  background-color: $accent;
-}
+  &:hover,
+  &:focus {
+    background-color: $accent;
 
-.social-link:hover .social-link__icon,
-.social-link:focus .social-link__icon {
-  fill: $lighter;
+    .social-link__icon {
+      fill: $lighter;
+    }
+  }
 }

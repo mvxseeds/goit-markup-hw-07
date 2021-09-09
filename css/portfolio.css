@@ -543,14 +543,12 @@ summary {
   letter-spacing: 0.03em;
 }
 
-.product:hover,
-.product:focus {
+.product:hover, .product:focus {
   -webkit-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
           box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
-.product:hover .product__popup-text,
-.product:focus .product__popup-text {
+.product:hover .product__popup-text, .product:focus .product__popup-text {
   bottom: 0;
 }
 
@@ -575,22 +573,20 @@ summary {
   fill: #afb1b8;
 }
 
-.social-link--dark {
-  background-color: rgba(255, 255, 255, 0.1);
-}
-
 .social-link__icon--dark {
   background-color: transparent;
   fill: #ffffff;
 }
 
-.social-link:hover,
-.social-link:focus {
+.social-link--dark {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.social-link:hover, .social-link:focus {
   background-color: #2196f3;
 }
 
-.social-link:hover .social-link__icon,
-.social-link:focus .social-link__icon {
+.social-link:hover .social-link__icon, .social-link:focus .social-link__icon {
   fill: #ffffff;
 }
 
@@ -653,7 +649,9 @@ summary {
 }
 
 .sub-form__input {
-  min-height: 50px;
+  display: block;
+  height: 50px;
+  width: 358px;
   margin-right: 12px;
   padding: 15px 15px;
   outline: none;
@@ -695,7 +693,7 @@ summary {
   margin: -1px;
 }
 
-.footer__button--primary {
+.sub-button {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
@@ -706,9 +704,11 @@ summary {
       -ms-flex-align: center;
           align-items: center;
   padding: 10px 30px;
+  width: 200px;
+  height: 50px;
 }
 
-.button__text {
+.sub-button__text {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
@@ -721,7 +721,7 @@ summary {
   text-transform: none;
 }
 
-.button__sub-icon {
+.sub-button__sub-icon {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -742,10 +742,10 @@ a {
 
 .product,
 .button--secondary {
-  -webkit-transition: -webkit-box-shadow 250ms cubic-bezier(0.1, 0.7, 1, 0.1);
-  transition: -webkit-box-shadow 250ms cubic-bezier(0.1, 0.7, 1, 0.1);
-  transition: box-shadow 250ms cubic-bezier(0.1, 0.7, 1, 0.1);
-  transition: box-shadow 250ms cubic-bezier(0.1, 0.7, 1, 0.1), -webkit-box-shadow 250ms cubic-bezier(0.1, 0.7, 1, 0.1);
+  -webkit-transition: background 250ms cubic-bezier(0.1, 0.7, 1, 0.1), -webkit-box-shadow;
+  transition: background 250ms cubic-bezier(0.1, 0.7, 1, 0.1), -webkit-box-shadow;
+  transition: box-shadow, background 250ms cubic-bezier(0.1, 0.7, 1, 0.1);
+  transition: box-shadow, background 250ms cubic-bezier(0.1, 0.7, 1, 0.1), -webkit-box-shadow;
 }
 
 .button--primary,
@@ -757,8 +757,7 @@ a {
           box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
-.social-link,
-.button--secondary {
+.social-link {
   -webkit-transition: background 250ms cubic-bezier(0.1, 0.7, 1, 0.1);
   transition: background 250ms cubic-bezier(0.1, 0.7, 1, 0.1);
 }

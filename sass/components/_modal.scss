@@ -43,6 +43,32 @@
   transition-delay: 250ms;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.1, 0.7, 1, 0.1);
+
+  &__close-icon {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    top: 0;
+    right: 0;
+    transform: translate(-8px, 8px);
+
+    width: 30px;
+    height: 30px;
+
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+      fill: $accent;
+    }
+  }
 }
 
 .backdrop.is-hidden .modal {
@@ -53,106 +79,82 @@
   transition-timing-function: cubic-bezier(0.1, 0.7, 1, 0.1);
 }
 
-.modal__close-icon {
-  position: fixed;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  top: 0;
-  right: 0;
-  transform: translate(-8px, 8px);
-
-  width: 30px;
-  height: 30px;
-
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  border-radius: 50%;
-
-  transition-property: fill;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.modal__close-icon:hover,
-.modal__close-icon:focus {
-  fill: $accent;
-}
-
 .form-order {
   text-align: center;
+
+  &__text {
+    display: inline-block;
+
+    margin-bottom: 12px;
+
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.15;
+    letter-spacing: 0.03em;
+
+    color: $secondary-text-color;
+  }
+
+  &__field {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    margin-bottom: 10px;
+
+    &-icon {
+      position: absolute;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      bottom: 0;
+      left: 0;
+      margin: 11px 12px;
+
+      width: 18px;
+      height: 18px;
+
+      transition-property: fill;
+      transition-duration: 250ms;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    &:hover,
+    &:focus-within {
+      .form-order__field-icon {
+        fill: $accent;
+      }
+    }
+  }
+
+  &__label {
+    margin-bottom: 4px;
+
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.01em;
+
+    color: $primary-text-color;
+  }
+
+  &__input {
+    padding: 12px;
+    padding-left: 40px;
+    height: 40px;
+    outline: none;
+
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    box-sizing: border-box;
+    border-radius: 4px;
+
+    transition-property: border-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
 }
 
-.form-order__text {
-  display: inline-block;
-
-  margin-bottom: 12px;
-
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 1.15;
-  letter-spacing: 0.03em;
-
-  color: $secondary-text-color;
-}
-
-.form-order__field {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  text-align: left;
-  margin-bottom: 10px;
-}
-
-.form-order__label {
-  margin-bottom: 4px;
-
-  font-size: 12px;
-  line-height: 1.17;
-  letter-spacing: 0.01em;
-
-  color: $primary-text-color;
-}
-
-.form-order__field-icon {
-  position: absolute;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  bottom: 0;
-  left: 0;
-  margin: 11px 12px;
-
-  width: 18px;
-  height: 18px;
-
-  transition-property: fill;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.form-order__field:hover .form-order__field-icon,
-.form-order__field:focus-within .form-order__field-icon {
-  fill: $accent;
-}
-
-.form-order__input {
-  padding: 12px;
-  padding-left: 40px;
-  height: 40px;
-  outline: none;
-
-  border: 1px solid rgba(33, 33, 33, 0.2);
-  box-sizing: border-box;
-  border-radius: 4px;
-
-  transition-property: border-color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.form-order__field:hover .form-order__input,
+.form-order .form-order__field:hover .form-order__input,
 .form-order__field:focus-within .form-order__input,
 .form-order__field:hover .form-order__textarea,
 .form-order__field:focus-within .form-order__textarea {

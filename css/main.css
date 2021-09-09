@@ -456,18 +456,6 @@ summary {
   background-color: #2f303a;
 }
 
-.overlay {
-  max-width: 1600px;
-  max-height: 600px;
-  margin: -200px auto;
-  padding: inherit;
-  background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero-bg.jpg);
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-bg.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
 .hero__button--primary {
   min-width: 200px;
   padding: 10px 32px;
@@ -487,6 +475,18 @@ summary {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: #ffffff;
+}
+
+.overlay {
+  max-width: 1600px;
+  max-height: 600px;
+  margin: -200px auto;
+  padding: inherit;
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero-bg.jpg);
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .advantages {
@@ -555,7 +555,6 @@ summary {
   margin-right: 0;
 }
 
-/* INDEX BUT ALSO IN PORTF */
 .product-type {
   position: relative;
   display: block;
@@ -655,22 +654,20 @@ summary {
   fill: #afb1b8;
 }
 
-.social-link--dark {
-  background-color: rgba(255, 255, 255, 0.1);
-}
-
 .social-link__icon--dark {
   background-color: transparent;
   fill: #ffffff;
 }
 
-.social-link:hover,
-.social-link:focus {
+.social-link--dark {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.social-link:hover, .social-link:focus {
   background-color: #2196f3;
 }
 
-.social-link:hover .social-link__icon,
-.social-link:focus .social-link__icon {
+.social-link:hover .social-link__icon, .social-link:focus .social-link__icon {
   fill: #ffffff;
 }
 
@@ -705,8 +702,7 @@ summary {
   border-color: #2196f3;
 }
 
-.client:hover .client__icon,
-.client:focus .client__icon {
+.client:hover .client__icon, .client:focus .client__icon {
   fill: #2196f3;
 }
 
@@ -769,7 +765,9 @@ summary {
 }
 
 .sub-form__input {
-  min-height: 50px;
+  display: block;
+  height: 50px;
+  width: 358px;
   margin-right: 12px;
   padding: 15px 15px;
   outline: none;
@@ -811,7 +809,7 @@ summary {
   margin: -1px;
 }
 
-.footer__button--primary {
+.sub-button {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
@@ -822,9 +820,11 @@ summary {
       -ms-flex-align: center;
           align-items: center;
   padding: 10px 30px;
+  width: 200px;
+  height: 50px;
 }
 
-.button__text {
+.sub-button__text {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
@@ -837,7 +837,7 @@ summary {
   text-transform: none;
 }
 
-.button__sub-icon {
+.sub-button__sub-icon {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -904,19 +904,6 @@ summary {
           transition-timing-function: cubic-bezier(0.1, 0.7, 1, 0.1);
 }
 
-.backdrop.is-hidden .modal {
-  -webkit-transform: scale(0) translate(-50%, -50%);
-          transform: scale(0) translate(-50%, -50%);
-  -webkit-transition-property: -webkit-transform;
-  transition-property: -webkit-transform;
-  transition-property: transform;
-  transition-property: transform, -webkit-transform;
-  -webkit-transition-duration: 250ms;
-          transition-duration: 250ms;
-  -webkit-transition-timing-function: cubic-bezier(0.1, 0.7, 1, 0.1);
-          transition-timing-function: cubic-bezier(0.1, 0.7, 1, 0.1);
-}
-
 .modal__close-icon {
   position: fixed;
   display: -webkit-box;
@@ -944,9 +931,21 @@ summary {
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal__close-icon:hover,
-.modal__close-icon:focus {
+.modal__close-icon:hover, .modal__close-icon:focus {
   fill: #2196f3;
+}
+
+.backdrop.is-hidden .modal {
+  -webkit-transform: scale(0) translate(-50%, -50%);
+          transform: scale(0) translate(-50%, -50%);
+  -webkit-transition-property: -webkit-transform;
+  transition-property: -webkit-transform;
+  transition-property: transform;
+  transition-property: transform, -webkit-transform;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+  -webkit-transition-timing-function: cubic-bezier(0.1, 0.7, 1, 0.1);
+          transition-timing-function: cubic-bezier(0.1, 0.7, 1, 0.1);
 }
 
 .form-order {
@@ -976,14 +975,6 @@ summary {
   margin-bottom: 10px;
 }
 
-.form-order__label {
-  margin-bottom: 4px;
-  font-size: 12px;
-  line-height: 1.17;
-  letter-spacing: 0.01em;
-  color: #757575;
-}
-
 .form-order__field-icon {
   position: absolute;
   display: -webkit-box;
@@ -1008,9 +999,16 @@ summary {
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.form-order__field:hover .form-order__field-icon,
-.form-order__field:focus-within .form-order__field-icon {
+.form-order__field:hover .form-order__field-icon, .form-order__field:focus-within .form-order__field-icon {
   fill: #2196f3;
+}
+
+.form-order__label {
+  margin-bottom: 4px;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.01em;
+  color: #757575;
 }
 
 .form-order__input {
@@ -1030,7 +1028,7 @@ summary {
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.form-order__field:hover .form-order__input,
+.form-order .form-order__field:hover .form-order__input,
 .form-order__field:focus-within .form-order__input,
 .form-order__field:hover .form-order__textarea,
 .form-order__field:focus-within .form-order__textarea {
@@ -1150,10 +1148,10 @@ a {
 
 .product,
 .button--secondary {
-  -webkit-transition: -webkit-box-shadow 250ms cubic-bezier(0.1, 0.7, 1, 0.1);
-  transition: -webkit-box-shadow 250ms cubic-bezier(0.1, 0.7, 1, 0.1);
-  transition: box-shadow 250ms cubic-bezier(0.1, 0.7, 1, 0.1);
-  transition: box-shadow 250ms cubic-bezier(0.1, 0.7, 1, 0.1), -webkit-box-shadow 250ms cubic-bezier(0.1, 0.7, 1, 0.1);
+  -webkit-transition: background 250ms cubic-bezier(0.1, 0.7, 1, 0.1), -webkit-box-shadow;
+  transition: background 250ms cubic-bezier(0.1, 0.7, 1, 0.1), -webkit-box-shadow;
+  transition: box-shadow, background 250ms cubic-bezier(0.1, 0.7, 1, 0.1);
+  transition: box-shadow, background 250ms cubic-bezier(0.1, 0.7, 1, 0.1), -webkit-box-shadow;
 }
 
 .button--primary,
@@ -1165,8 +1163,7 @@ a {
           box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
-.social-link,
-.button--secondary {
+.social-link {
   -webkit-transition: background 250ms cubic-bezier(0.1, 0.7, 1, 0.1);
   transition: background 250ms cubic-bezier(0.1, 0.7, 1, 0.1);
 }

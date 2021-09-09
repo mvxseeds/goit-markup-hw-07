@@ -16,34 +16,32 @@
   }
 }
 
-/* INDEX BUT ALSO IN PORTF */
-
 .product-type {
   position: relative;
   display: block;
-}
 
-.product-type__text {
-  position: absolute;
-  display: flex;
+  &__text {
+    position: absolute;
+    display: flex;
 
-  justify-content: center;
-  align-items: center;
-  bottom: 0;
-  width: 100%;
-  height: 70px;
-  margin: 0;
+    justify-content: center;
+    align-items: center;
+    bottom: 0;
+    width: 100%;
+    height: 70px;
+    margin: 0;
 
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
 
-  background-color: rgba(47, 48, 58, 0.8);
-  color: $lighter;
-}
+    background-color: rgba(47, 48, 58, 0.8);
+    color: $lighter;
+  }
 
-.product-type__img {
-  display: block;
+  &__img {
+    display: block;
+  }
 }

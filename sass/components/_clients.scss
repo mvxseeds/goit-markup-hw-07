@@ -30,10 +30,9 @@
   &:hover,
   &:focus {
     border-color: $accent;
-  }
-}
 
-.client:hover .client__icon,
-.client:focus .client__icon {
-  fill: $accent;
+    .client__icon {
+      fill: $accent;
+    }
+  }
 }
