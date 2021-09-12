@@ -935,6 +935,14 @@ summary {
   fill: #2196f3;
 }
 
+.modal__button--primary {
+  padding: 10px 55px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+}
+
 .backdrop.is-hidden .modal {
   -webkit-transform: scale(0) translate(-50%, -50%);
           transform: scale(0) translate(-50%, -50%);
@@ -960,6 +968,20 @@ summary {
   line-height: 1.15;
   letter-spacing: 0.03em;
   color: #212121;
+}
+
+.form-order__text--policy, .form-order__link--policy {
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: #757575;
+}
+
+.form-order__link--policy {
+  color: #2196f3;
+  text-decoration: underline;
 }
 
 .form-order__field {
@@ -999,6 +1021,12 @@ summary {
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.form-order__field:hover .form-order__textarea,
+.form-order__field:hover .form-order__input, .form-order__field:focus-within .form-order__textarea,
+.form-order__field:focus-within .form-order__input {
+  border-color: #2196f3;
+}
+
 .form-order__field:hover .form-order__field-icon, .form-order__field:focus-within .form-order__field-icon {
   fill: #2196f3;
 }
@@ -1009,6 +1037,18 @@ summary {
   line-height: 1.17;
   letter-spacing: 0.01em;
   color: #757575;
+}
+
+.form-order__label--policy {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: auto;
+  margin-bottom: 30px;
+  width: 425px;
 }
 
 .form-order__input {
@@ -1026,13 +1066,6 @@ summary {
           transition-duration: 250ms;
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.form-order .form-order__field:hover .form-order__input,
-.form-order__field:focus-within .form-order__input,
-.form-order__field:hover .form-order__textarea,
-.form-order__field:focus-within .form-order__textarea {
-  border-color: #2196f3;
 }
 
 .form-order__textarea {
@@ -1072,18 +1105,6 @@ summary {
   color: rgba(117, 117, 117, 0.5);
 }
 
-.form-order__label--policy {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin: auto;
-  margin-bottom: 30px;
-  width: 425px;
-}
-
 .form-order__check-icon {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
@@ -1115,29 +1136,6 @@ summary {
   border-color: transparent;
   background-color: #2196f3;
   background-origin: border-box;
-}
-
-.form-order__text--policy,
-.form-order__link--policy {
-  margin: 0;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
-  color: #757575;
-}
-
-.form-order__link--policy {
-  color: #2196f3;
-  text-decoration: underline;
-}
-
-.modal__button--primary {
-  padding: 10px 55px;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.87;
-  letter-spacing: 0.06em;
 }
 
 button,

@@ -69,6 +69,16 @@
       fill: $accent;
     }
   }
+
+  &__button--primary {
+    padding: 10px 55px;
+
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.87;
+
+    letter-spacing: 0.06em;
+  }
 }
 
 .backdrop.is-hidden .modal {
@@ -93,6 +103,24 @@
     letter-spacing: 0.03em;
 
     color: $secondary-text-color;
+  }
+
+  &__text--policy,
+  &__link--policy {
+    margin: 0;
+
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+
+    letter-spacing: 0.03em;
+
+    color: $primary-text-color;
+  }
+
+  &__link--policy {
+    color: $accent;
+    text-decoration: underline;
   }
 
   &__field {
@@ -122,6 +150,11 @@
 
     &:hover,
     &:focus-within {
+      .form-order__textarea,
+      .form-order__input {
+        border-color: $accent;
+      }
+
       .form-order__field-icon {
         fill: $accent;
       }
@@ -136,6 +169,15 @@
     letter-spacing: 0.01em;
 
     color: $primary-text-color;
+
+    &--policy {
+      display: flex;
+      align-items: center;
+      margin: auto;
+      margin-bottom: 30px;
+
+      width: 425px;
+    }
   }
 
   &__input {
@@ -152,102 +194,58 @@
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
-}
 
-.form-order .form-order__field:hover .form-order__input,
-.form-order__field:focus-within .form-order__input,
-.form-order__field:hover .form-order__textarea,
-.form-order__field:focus-within .form-order__textarea {
-  border-color: $accent;
-}
+  &__textarea {
+    resize: none;
+    max-height: 120px;
+    padding: 12px 16px;
+    outline: none;
 
-.form-order__textarea {
-  resize: none;
-  max-height: 120px;
-  padding: 12px 16px;
-  outline: none;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.01em;
 
-  font-size: 12px;
-  line-height: 1.17;
-  letter-spacing: 0.01em;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    box-sizing: border-box;
+    border-radius: 4px;
 
-  border: 1px solid rgba(33, 33, 33, 0.2);
-  box-sizing: border-box;
-  border-radius: 4px;
+    color: $primary-text-color;
 
-  color: $primary-text-color;
+    transition-property: border-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
-  transition-property: border-color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
+    &::placeholder {
+      color: rgba(117, 117, 117, 0.5);
+    }
+  }
 
-.form-order__textarea::placeholder {
-  color: rgba(117, 117, 117, 0.5);
-}
+  &__check-icon {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 16px;
+    height: 15px;
+    margin-right: 8px;
 
-.form-order__label--policy {
-  display: flex;
-  align-items: center;
-  margin: auto;
-  margin-bottom: 30px;
+    border: 2px solid $secondary-text-color;
+    border-radius: 2px;
+    fill: $lighter;
+  }
 
-  width: 425px;
-}
+  &__checkbox {
+    visibility: none;
 
-.form-order__check-icon {
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-  width: 16px;
-  height: 15px;
-  margin-right: 8px;
+    position: absolute;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+  }
 
-  border: 2px solid $secondary-text-color;
-  border-radius: 2px;
-  fill: $lighter;
-}
-
-.form-order__checkbox {
-  visibility: none;
-
-  position: absolute;
-  clip: rect(0 0 0 0);
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-}
-
-.form-order__checkbox:checked + .form-order__check-icon {
-  border-color: transparent;
-  background-color: $accent;
-  background-origin: border-box;
-}
-
-.form-order__text--policy,
-.form-order__link--policy {
-  margin: 0;
-
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
-
-  letter-spacing: 0.03em;
-
-  color: $primary-text-color;
-}
-
-.form-order__link--policy {
-  color: $accent;
-  text-decoration: underline;
-}
-
-.modal__button--primary {
-  padding: 10px 55px;
-
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.87;
-
-  letter-spacing: 0.06em;
+  &__checkbox:checked + &__check-icon {
+    border-color: transparent;
+    background-color: $accent;
+    background-origin: border-box;
+  }
 }
