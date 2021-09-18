@@ -50,6 +50,8 @@
     justify-content: center;
     align-items: center;
 
+    cursor: pointer;
+
     top: 0;
     right: 0;
     transform: translate(-8px, 8px);
@@ -59,6 +61,8 @@
 
     border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 50%;
+
+    background-color: transparent;
 
     transition-property: fill;
     transition-duration: 250ms;
@@ -174,6 +178,7 @@
       display: flex;
       align-items: center;
       margin: auto;
+      margin-top: 20px;
       margin-bottom: 30px;
 
       width: 425px;

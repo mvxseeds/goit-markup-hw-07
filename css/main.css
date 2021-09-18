@@ -915,6 +915,7 @@ summary {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  cursor: pointer;
   top: 0;
   right: 0;
   -webkit-transform: translate(-8px, 8px);
@@ -923,6 +924,7 @@ summary {
   height: 30px;
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
+  background-color: transparent;
   -webkit-transition-property: fill;
   transition-property: fill;
   -webkit-transition-duration: 250ms;
@@ -1047,6 +1049,7 @@ summary {
       -ms-flex-align: center;
           align-items: center;
   margin: auto;
+  margin-top: 20px;
   margin-bottom: 30px;
   width: 425px;
 }

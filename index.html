@@ -448,11 +448,11 @@
     </footer>
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
-        <a href="#" class="modal__close-icon" data-modal-close>
+        <button type="button" class="modal__close-icon" data-modal-close>
           <svg width="18" height="18">
             <use href="./images/sprite.svg#modal-close"></use>
           </svg>
-        </a>
+        </button>
         <form action="" class="form-order">
           <b class="form-order__text">Оставьте свои данные, мы вам перезвоним</b>
           <div class="form-order__field">
@@ -502,7 +502,6 @@
             <span class="form-order__text form-order__text--policy"
               >Соглашаюсь с рассылкой и принимаю&nbsp;</span
             ><a class="form-order__link form-order__link--policy" href="#">Условия договора</a>
-            <!-- form-order__link--policy -- delete if unnecessary -->
           </label>
           <button type="submit" class="button button--primary modal__button--primary">
             Отправить
