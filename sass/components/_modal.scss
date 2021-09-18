@@ -46,9 +46,7 @@
 
   &__close-icon {
     position: fixed;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @extend %flex-center;
 
     top: 0;
     right: 0;
@@ -136,9 +134,7 @@
 
     &-icon {
       position: absolute;
-      display: flex;
-      justify-content: center;
-      align-items: center;
+      @extend %flex-center;
 
       bottom: 0;
       left: 0;

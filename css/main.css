@@ -19,7 +19,7 @@ body {
 }
 
 .header__nav, .main-nav,
-.contacts-list--vertical, .social-list, .clients-list, .client {
+.contacts-list--vertical, .social-list, .clients-list, .client, .modal__close-icon, .form-order__field-icon {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -906,24 +906,16 @@ summary {
 
 .modal__close-icon {
   position: fixed;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  cursor: pointer;
   top: 0;
   right: 0;
   -webkit-transform: translate(-8px, 8px);
           transform: translate(-8px, 8px);
   width: 30px;
   height: 30px;
+  padding: 0;
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
+  cursor: pointer;
   background-color: transparent;
   -webkit-transition-property: fill;
   transition-property: fill;
@@ -1001,15 +993,6 @@ summary {
 
 .form-order__field-icon {
   position: absolute;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   bottom: 0;
   left: 0;
   margin: 11px 12px;
