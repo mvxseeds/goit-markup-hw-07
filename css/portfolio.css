@@ -338,8 +338,13 @@ body {
   border-bottom: 1px solid #ececec;
 }
 
+.main-nav__link {
+  color: #212121;
+}
+
 .main-nav__link--current {
   position: relative;
+  color: #2196f3;
 }
 
 .main-nav__link--current::after {
@@ -353,13 +358,9 @@ body {
   background-color: #2196f3;
 }
 
-.main-nav__link--current, .main-nav__link:hover, .main-nav__link:focus {
+.main-nav__link:hover, .main-nav__link:focus {
   color: #2196f3;
   fill: #2196f3;
-}
-
-.main-nav__link {
-  color: #212121;
 }
 
 .contacts-list__icon {
