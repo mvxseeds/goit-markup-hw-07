@@ -73,6 +73,7 @@
   }
 
   &__button--primary {
+    margin-top: 30px;
     padding: 10px 55px;
 
     font-weight: 700;
@@ -132,6 +133,10 @@
     text-align: left;
     margin-bottom: 10px;
 
+    &--last {
+      margin-bottom: 0;
+    }
+
     &-icon {
       position: absolute;
       @extend %flex-center;
@@ -174,8 +179,6 @@
       display: flex;
       align-items: center;
       margin: auto;
-      margin-top: 20px;
-      margin-bottom: 30px;
 
       width: 425px;
     }
@@ -200,6 +203,7 @@
     resize: none;
     max-height: 120px;
     padding: 12px 16px;
+    margin-bottom: 20px;
     outline: none;
 
     font-size: 12px;
